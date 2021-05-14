@@ -60,6 +60,14 @@ Clone the ```distributed-load-testing-on-aws``` GitHub repositroy, then make the
 git clone https://github.com/awslabs/distributed-load-testing-on-aws.git
 ```
 
+If on windows - ensure LF line endings.
+
+Ensure you have https://github.com/bmatzelle/gow installed.
+
+```bash
+find . -type f -exec dos2unix {} \;
+```
+
 ### 2. Run unit tests
 Run unit tests to make sure added customization passes the tests:
 ```bash
